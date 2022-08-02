@@ -1,2 +1,2 @@
 
-#this script retun the number of files in a path you enter
+this script retun the number of files in a path you enter
