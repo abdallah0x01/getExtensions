@@ -1,2 +1,2 @@
 # os_tasks
-get extensions form files 
+multiple operating system tasks
