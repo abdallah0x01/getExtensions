@@ -11,12 +11,12 @@ for root, dirnames,filenames in os.walk(path):
         if not os.path.exists(f'{path2copy2}\\{ext}'):
             os.makedirs(f'{path2copy2}\\{ext}')
             try:
-                shutil.copy(filename,f'{path2copy2}\\{ext}')
+                shutil.copy(f'{root}\\{filename}',f'{path2copy2}\\{ext}')
             except:
                 continue
 
         else:
             try:
-                shutil.copy(filename,f'{path2copy2}\\{ext}')
+                shutil.copy(f'{root}\\{filename}',f'{path2copy2}\\{ext}')
             except:
                 continue
