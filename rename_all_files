@@ -1,0 +1,16 @@
+import os
+
+for root, dirnames, filenames in os.walk(r'D:\COURSES\Windows Privilege Escalation for Beginners\Windows Privilege Escalation for Beginners'):
+    for filename in filenames:
+
+        if '.eng' in filename:
+            new_name = filename.replace('.eng', '')
+            os.rename(fr'{root}\{filename}',
+                      fr'{root}\{new_name}')
+
+        elif '-opendir.cloud' in filename:
+            new_name = filename.replace('-opendir.cloud', '')
+            os.rename(fr'{root}\{filename}',
+                      fr'{root}\{new_name}')
+
+print('Done')
